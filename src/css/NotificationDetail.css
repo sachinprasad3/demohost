@@ -1,0 +1,97 @@
+.notification-detail-page {
+  min-height: 100vh;
+  background: #f6f8fb;
+  padding-bottom: 20px;
+}
+
+/* HEADER */
+.nd-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nd-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.back-btn {
+  border: none;
+  background: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+/* CARD */
+.nd-card {
+  margin: 14px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  display: flex;
+  gap: 12px;
+}
+
+.nd-icon {
+  background: #eef2ff;
+  color: #4f46e5;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nd-content {
+  flex: 1;
+}
+
+.nd-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.nd-date {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.nd-message {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #374151;
+}
+
+/* TAG */
+.nd-tag {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.nd-tag.general {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.nd-tag.urgent {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.nd-tag.fee {
+  background: #ecfdf5;
+  color: #047857;
+}

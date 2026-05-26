@@ -1,0 +1,303 @@
+.exam-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: #f9fbff;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3a3a3a;
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+
+.subject-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 10px;
+}
+
+.subject-row span {
+  flex: 1;
+}
+
+.subject-row select {
+  width: 180px;
+}
+
+
+
+.result-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.save-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.print-btn {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media print {
+  .actions {
+    display: none;
+  }
+}
+
+
+
+
+.student-exam-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #f7faff;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.subject-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed #ddd;
+}
+
+.subject-row:last-child {
+  border-bottom: none;
+}
+
+.grade {
+  font-weight: 600;
+  color: #444;
+}
+
+.remarks {
+  line-height: 1.5;
+  color: #555;
+}
+
+.result-box {
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.result-box.pass {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.result-box.improve {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.print-sec {
+  text-align: center;
+}
+
+.print-sec button {
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media print {
+  .print-sec {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attendance .box{margin-bottom: 5px;}
+
+ 
+.student-name {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* SUMMARY */
+.attendance-summary {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.summary-box {
+  background: #f4f6f8;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 90px;
+  font-size: 13px;
+}
+
+.summary-box.present {
+  background: #e7f9ee;
+}
+
+/* CALENDAR COLORS */
+.att-present {
+  background: #4caf50 !important;
+  color: #fff !important;
+  border-radius: 50%;
+}
+
+.att-absent {
+  background: #f44336 !important;
+  color: #fff !important;
+  border-radius: 50%;
+}
+
+.att-leave {
+  background: #ff9800 !important;
+  color: #fff !important;
+  border-radius: 50%;
+}
+
+/* LEGEND */
+.legend {
+  display: flex;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+.legend .lg {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.legend .present {
+  background: #4caf50;
+}
+
+.legend .absent {
+  background: #f44336;
+}
+
+.legend .leave {
+  background: #ff9800;
+}
+
+/* LIST */
+.attendance-list {
+  margin-top: 10px;
+}
+
+.attendance-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.badge.present {
+  background: #4caf50;
+}
+
+.badge.absent {
+  background: #f44336;
+}
+
+.badge.leave {
+  background: #ff9800;
+}
+
+input{background: #000!important;}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .attendance-summary {
+    flex-direction: column;
+  }
+}

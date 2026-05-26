@@ -1,0 +1,72 @@
+import { useNavigate } from "react-router-dom";
+
+export const ROLES = {
+  ADMIN: "ADMIN",
+  TEACHER: "TEACHER",
+  PARENT: "PARENT",
+};
+
+
+
+export const getRoleBasedRedirect = (role) => {
+  const redirects = {
+    ADMIN: "/admin",
+    TEACHER: "/teacher",
+    PARENT: "/student"
+  };
+  return redirects[role] ;
+};
+
+export const getCandidateField = (candidate, field) => {
+  // console.log("i am running get candidate field",candidate.studentFirstName, field)
+  if (!candidate) return null
+
+  switch (field) {
+    case 'studentName':
+      return [
+        candidate.studentFirstName,
+        candidate.studentMiddleName,
+        candidate.studentLastName
+      ].filter(Boolean).join(' ')
+
+    case 'gender':
+      return candidate.gender
+
+    case 'dob':
+      return candidate.dateOfBirth
+
+    case 'admissionStatus':
+      return candidate.admissionStatus
+
+    case 'primaryContact':
+      return candidate.contacts?.find(c => c.defaultAddress === 'Y') || null
+
+    case 'mother':
+      return candidate.contacts?.find(
+        c => c.contactRelationshipCode === 'MOTHER'
+      ) || null
+
+    case 'father':
+      return candidate.contacts?.find(
+        c => c.contactRelationshipCode === 'FATHER'
+      ) || null
+
+    case 'guardian':
+      return candidate.contacts?.find(
+        c => c.contactRelationshipCode === 'GUARDIAN'
+      ) || null
+
+    default:
+      return candidate[field] ?? null
+  }
+}
+
+export const getInitials = (name = '') =>
+  name
+    .split(' ')
+    .filter(Boolean)
+    .slice(0, 2)
+    .map(n => n[0].toUpperCase())
+    .join('')
+
+   

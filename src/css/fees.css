@@ -1,0 +1,179 @@
+/* 🌈 Base Layout */
+body, html {
+  background: linear-gradient(to bottom, #eef2ff, #ffffff);
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.fee-container {
+  padding: 16px;
+  max-width: 480px;
+  margin: auto;
+}
+
+/* 🌟 Page Heading */
+.fee-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3c3cff;
+  text-align: center;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+/* 💳 Card Styles */
+.fee-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 16px;
+  padding: 16px 18px;
+  transition: all 0.3s ease;
+}
+
+.fee-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+}
+
+/* 🧾 Section Titles */
+.fee-section-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #222;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.fee-section-title svg {
+  width: 22px;
+  height: 22px;
+  color: #4f46e5;
+  margin-right: 6px;
+}
+
+/* 💰 Summary Grid */
+.fee-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 6px;
+}
+
+.fee-summary-grid p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.fee-summary-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.fee-summary-value {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.fee-total { color: #3b82f6; }
+.fee-paid { color: #16a34a; }
+.fee-balance { color: #dc2626; }
+
+/* 🔘 Pay Now Button */
+.pay-now-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #6366f1, #4338ca);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 0;
+  margin-top: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pay-now-btn:hover {
+  background: linear-gradient(135deg, #4f46e5, #312e81);
+}
+
+/* 📅 Installments */
+.installment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.installment-item:last-child {
+  border-bottom: none;
+}
+
+.installment-month {
+  font-weight: 600;
+  color: #333;
+}
+
+.installment-status {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.status-paid { color: #16a34a; }
+.status-pending { color: #dc2626; }
+
+.installment-amount {
+  font-weight: 700;
+  color: #111;
+}
+
+/* 🧾 Payment History */
+.payment-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.payment-row:last-child {
+  border-bottom: none;
+}
+
+.payment-amount {
+  font-weight: 700;
+  color: #111;
+}
+
+.payment-date {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.payment-mode {
+  font-weight: 600;
+  color: #4f46e5;
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .fee-title {
+    font-size: 1.4rem;
+  }
+
+  .fee-card {
+    padding: 14px;
+  }
+
+  .fee-summary-value {
+    font-size: 1rem;
+  }
+
+  .pay-now-btn {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,67 @@
+GET	http://localhost:8000/api/fees/structure	Fetch all fee structures
+GET	http://localhost:8000/api/fees/structure/1	Fetch one by ID
+POST	http://localhost:8000/api/fees/structure	Add new record
+PUT	http://localhost:8000/api/fees/structure/1	Update record
+DELETE	http://localhost:8000/api/fees/structure/1	Delete record
+
+GET	http://localhost:8000/api/fees/categories	Get all categories
+POST	http://localhost:8000/api/fees/categories	Add a new category
+GET	http://localhost:8000/api/fees/categories/1	Get a category by ID
+DELETE	http://localhost:8000/api/fees/categories/1	Delete a category
+
+GET	http://localhost:8000/api/students	Fetch all students
+GET	http://localhost:8000/api/students/{id}	Fetch one student by ID
+POST	http://localhost:8000/api/students	Add a new student
+PUT	http://localhost:8000/api/students/{id}	Update student
+DELETE	http://localhost:8000/api/students/{id}	Delete student
+
+GET	http://localhost:8000/api/fees/monthly	Fetch all month-wise fee records
+GET	http://localhost:8000/api/fees/monthly/1	Fetch single record by ID
+POST	http://localhost:8000/api/fees/monthly	Create new month-wise fee record
+PUT	http://localhost:8000/api/fees/monthly/1	Update existing record
+DELETE	http://localhost:8000/api/fees/monthly/1	Delete record
+
+
+GET	http://localhost:8000/api/payments	Get all payment records
+GET	http://localhost:8000/api/payments/1	Get payment by ID
+POST	http://localhost:8000/api/payments	Add new payment
+PUT	http://localhost:8000/api/payments/1	Update payment
+DELETE	http://localhost:8000/api/payments/1	Delete payment
+
+GET	http://localhost:8000/api/admission-forms	Get all admission forms
+GET	http://localhost:8000/api/admission-forms/{id}	Get form by ID
+POST	http://localhost:8000/api/admission-forms	Create new form
+PUT	http://localhost:8000/api/admission-forms/{id}	Update form
+DELETE	http://localhost:8000/api/admission-forms/{id}	Delete form
+
+
+
+POST	http://localhost:8000/api/admin/login	Admin login
+POST	http://localhost:8000/api/admin/register	Create admin
+POST	http://localhost:8000/api/student/login	Student login
+POST	http://localhost:8000/api/student/register	Register student login
+
+
+
+
+
+
+npm install @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
+
+
+
+
+
+
+
+GET http://localhost:8000/api/students/101/fee-details
+
+
+
+
+
+POST	http://localhost:8000/api/admission-forms/submit	Submit admission form (auto-creates student + login credentials)
+GET	http://localhost:8000/api/admission-forms	Get all admission forms
+GET	http://localhost:8000/api/admission-forms/{id}	Get specific admission form
+PUT	http://localhost:8000/api/admission-forms/{id}	Update admission form
+DELETE	http://localhost:8000/api/admission-forms/{id}	Delete admission form

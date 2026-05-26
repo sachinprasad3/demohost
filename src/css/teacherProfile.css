@@ -1,0 +1,70 @@
+.teacher-profile-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background:var(--menu-active-bg);
+  padding: 20px;
+  border-radius: 12px;
+  color:var(--menu-text-active);
+}
+
+.teacherimg { display: flex; align-items: center; justify-content: center; color: var(--menu-active-bg);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 5px; overflow: hidden; font-size: 22px;
+}
+.teacherimg img{object-fit: cover; width: 100%; height: 100%;}
+
+.profile-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.profile-header p {
+  margin: 4px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.emp-id {
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.profile-card {
+  background: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 600px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
